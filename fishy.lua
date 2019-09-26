@@ -204,7 +204,7 @@ end
 local function GetFishingSkill()
 	for i = 1, GetNumSkillLines() do
 		local skillName, _, _, skillRank, _, skillModifier, skillMaxRank, _, _, _, _, _, _= GetSkillLineInfo(i)
-		if skillName == "Fishing" then 
+		if skillName == "Fishing" or skillName == "Angeln" then 
 			return skillRank, skillModifier, skillMaxRank
 		end
 	end
